@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="icon" type="image/svg+xml" href="node_modules/bootstrap-icons/icons/yin-yang.svg">
     <script src="js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -38,24 +39,19 @@
         <div class="container">
             <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
                 <a href="#" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-yin-yang" viewBox="0 0 16 16">
-                        <path d="M9.167 4.5a1.167 1.167 0 1 1-2.334 0 1.167 1.167 0 0 1 2.334 0"/>
-                        <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M1 8a7 7 0 0 1 7-7 3.5 3.5 0 1 1 0 7 3.5 3.5 0 1 0 0 7 7 7 0 0 1-7-7m7 4.667a1.167 1.167 0 1 1 0-2.334 1.167 1.167 0 0 1 0 2.334"/>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                        class="bi bi-yin-yang" viewBox="0 0 16 16">
+                        <path d="M9.167 4.5a1.167 1.167 0 1 1-2.334 0 1.167 1.167 0 0 1 2.334 0" />
+                        <path
+                            d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M1 8a7 7 0 0 1 7-7 3.5 3.5 0 1 1 0 7 3.5 3.5 0 1 0 0 7 7 7 0 0 1-7-7m7 4.667a1.167 1.167 0 1 1 0-2.334 1.167 1.167 0 0 1 0 2.334" />
                     </svg>
                 </a>
-
-
-
-
-
-
-                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                    <li><a href="#" class="nav-link px-2 link-secondary">Overview</a></li>
-                    <li><a href="#" class="nav-link px-2 link-body-emphasis">Inventory</a></li>
-                    <li><a href="#" class="nav-link px-2 link-body-emphasis">Customers</a></li>
-                    <li><a href="#" class="nav-link px-2 link-body-emphasis">Products</a></li>
+                <ul class="menu-natureza nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="#" class="nav-link px-2 link-secondary">Visão Geral</a></li>
+                    <li><a href="#" class="nav-link px-2 link-body-emphasis">Exploração</a></li>
+                    <li><a href="#" class="nav-link px-2 link-body-emphasis">Observadores da Natureza</a></li>
+                    <li><a href="#" class="nav-link px-2 link-body-emphasis">Ecossistemas</a></li>
                 </ul>
-
                 <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
                     <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
                 </form>
@@ -66,9 +62,9 @@
                         <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
                     </a>
                     <ul class="dropdown-menu text-small" style="">
-                        <li><a class="dropdown-item" href="#">New project...</a></li>
-                        <li><a class="dropdown-item" href="#">Settings</a></li>
-                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Minhas viagens</a></li>
+                        <li><a class="dropdown-item" href="#">Configurações</a></li>
+                        <li><a class="dropdown-item" href="#">Conta</a></li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>
@@ -78,6 +74,47 @@
             </div>
         </div>
     </header>
+    <h1>Lista de viagens disponíveis para 2024</h1>
+    <div class="list-group">
+        <label class="list-group-item d-flex gap-2">
+            <input class="form-check-input flex-shrink-0" type="radio" name="listGroupRadios" id="listGroupRadios1"
+                value="" checked="">
+            <span>
+                Floresta Encantadora
+                <small class="d-block text-body-secondary">Explore a vegetação exuberante e a vida selvagem</small>
+            </span>
+        </label>
+        <label class="list-group-item d-flex gap-2">
+            <input class="form-check-input flex-shrink-0" type="radio" name="listGroupRadios" id="listGroupRadios2"
+                value="">
+            <span>
+                Margem Tranquila do Lago
+                <small class="d-block text-body-secondary">Encontre paz à beira de um lago sereno</small>
+            </span>
+        </label>
+        <label class="list-group-item d-flex gap-2">
+            <input class="form-check-input flex-shrink-0" type="radio" name="listGroupRadios" id="listGroupRadios3"
+                value="">
+            <span>
+                Alturas da Montanha
+                <small class="d-block text-body-secondary">Alcance novas alturas e desfrute de vistas deslumbrantes</small>
+            </span>
+        </label>
+    </div>
+    <div class="d-flex gap-2 justify-content-center py-5">
+        <button class="btn btn-primary d-inline-flex align-items-center" type="button">
+            Iniciar sua Jornada
+            <svg class="bi ms-1" width="20" height="20">
+                <use xlink:href="#arrow-right-short"></use>
+            </svg>
+        </button>
+        <button class="btn btn-outline-secondary d-inline-flex align-items-center" type="button">
+            Saiba Mais...
+            <svg class="bi ms-1" width="20" height="20">
+                <use xlink:href="#arrow-right-short"></use>
+            </svg>
+        </button>
+    </div>
 </body>
 
 </html>
